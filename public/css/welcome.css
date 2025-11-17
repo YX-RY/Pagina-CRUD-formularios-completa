@@ -1,0 +1,72 @@
+/* Contenedor general */
+.contenedor-tarjetas {
+    max-width: 1200px;
+    margin: 40px auto; /* Centramos todo en la pantalla */
+    padding: 20px;
+}
+
+/* Título centrado */
+.titulo-dashboard {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Contenedor flexible de tarjetas */
+.tarjetas-wrapper {
+    display: flex;
+    justify-content: center;  /* Centra las tarjetas */
+    gap: 25px;                 /* Espacio entre ellas */
+    flex-wrap: wrap;           /* Permite que bajen si la pantalla es pequeña */
+}
+
+/* TARJETAS */
+.card-custom {
+    background: #ffffff;
+    padding: 25px;
+    width: 260px;
+    min-height: 260px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card-custom:hover {
+    transform: translateY(-5px);
+}
+
+/* Iconos grandes */
+.card-custom i {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+/* Botón personalizado */
+.btn-custom {
+    display: inline-block;
+    background: #212529;   /* Negro elegante */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+
+    /* Para que el icono NO se salga */
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;  /* Espacio entre icono y texto */
+}
+
+.btn-custom:hover {
+    background: #000;
+    color: white;
+}
+
+/* Ajuste del icono dentro del botón */
+.btn-custom i {
+    font-size: 18px;
+    margin: 0;
+}
